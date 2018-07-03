@@ -1,0 +1,28 @@
+### IDE
+.vscode/
+.idea/
+
+### Node
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.changelog
+node_modules/
+
+### Build
+coverage/
+modules/**/.npmignore
+modules/**/LICENSE
+modules/**/README.md
+modules/**/*.js
+modules/**/*.js.map
+modules/**/*.d.ts
+alias/**/.npmignore
+alias/**/LICENSE
+alias/**/README.md
+alias/**/*.js
+alias/**/*.js.map
+alias/**/*.d.ts

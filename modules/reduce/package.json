@@ -1,0 +1,33 @@
+{
+  "name": "@pakal/reduce",
+  "version": "0.0.0-PLACEHOLDER",
+  "description": "Reduce is package from Pakal library",
+  "main": "index.js",
+  "browser": "bundle.umd.js",
+  "module": "index.esm.js",
+  "es2015": "index.es6.js",
+  "typings": "index.d.ts",
+  "author": {
+    "name": "Yisrael Eliev",
+    "url": "https://github.com/yisraelx",
+    "email": "yisraelx@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "utils",
+    "utilities",
+    "modules",
+    "modular"
+  ],
+  "homepage": "https://github.com/yisraelx/pakal#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yisraelx/pakal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yisraelx/pakal/issues"
+  },
+  "dependencies": {
+    "@pakal/for-each": "0.0.0-PLACEHOLDER"
+  }
+}

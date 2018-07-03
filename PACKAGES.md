@@ -1,0 +1,12 @@
+# Packages:
+- **@pakal/-all** - [Git](https://github.com/yisraelx/pakal/blob/master/modules/-all) - [Npm](https://npmjs.com/package/@pakal/-all) - [CHANGELOG](https://github.com/yisraelx/pakal/blob/master/modules/-all/CHANGELOG.md)
+- **@pakal/-collection** - [Git](https://github.com/yisraelx/pakal/blob/master/modules/-collection) - [Npm](https://npmjs.com/package/@pakal/-collection) - [CHANGELOG](https://github.com/yisraelx/pakal/blob/master/modules/-collection/CHANGELOG.md)
+- **@pakal/-function** - [Git](https://github.com/yisraelx/pakal/blob/master/modules/-function) - [Npm](https://npmjs.com/package/@pakal/-function) - [CHANGELOG](https://github.com/yisraelx/pakal/blob/master/modules/-function/CHANGELOG.md)
+- **@pakal/-object** - [Git](https://github.com/yisraelx/pakal/blob/master/modules/-object) - [Npm](https://npmjs.com/package/@pakal/-object) - [CHANGELOG](https://github.com/yisraelx/pakal/blob/master/modules/-object/CHANGELOG.md)
+- **@pakal/arity** - [Git](https://github.com/yisraelx/pakal/blob/master/modules/arity) - [Npm](https://npmjs.com/package/@pakal/arity) - [CHANGELOG](https://github.com/yisraelx/pakal/blob/master/modules/arity/CHANGELOG.md)
+- **@pakal/assertify** - [Git](https://github.com/yisraelx/pakal/blob/master/modules/assertify) - [Npm](https://npmjs.com/package/@pakal/assertify) - [CHANGELOG](https://github.com/yisraelx/pakal/blob/master/modules/assertify/CHANGELOG.md)
+- **@pakal/assign** - [Git](https://github.com/yisraelx/pakal/blob/master/modules/assign) - [Npm](https://npmjs.com/package/@pakal/assign) - [CHANGELOG](https://github.com/yisraelx/pakal/blob/master/modules/assign/CHANGELOG.md)
+- **@pakal/curry** - [Git](https://github.com/yisraelx/pakal/blob/master/modules/curry) - [Npm](https://npmjs.com/package/@pakal/curry) - [CHANGELOG](https://github.com/yisraelx/pakal/blob/master/modules/curry/CHANGELOG.md)
+- **@pakal/for-each** - [Git](https://github.com/yisraelx/pakal/blob/master/modules/for-each) - [Npm](https://npmjs.com/package/@pakal/for-each) - [CHANGELOG](https://github.com/yisraelx/pakal/blob/master/modules/for-each/CHANGELOG.md)
+- **@pakal/keys** - [Git](https://github.com/yisraelx/pakal/blob/master/modules/keys) - [Npm](https://npmjs.com/package/@pakal/keys) - [CHANGELOG](https://github.com/yisraelx/pakal/blob/master/modules/keys/CHANGELOG.md)
+- **@pakal/reduce** - [Git](https://github.com/yisraelx/pakal/blob/master/modules/reduce) - [Npm](https://npmjs.com/package/@pakal/reduce) - [CHANGELOG](https://github.com/yisraelx/pakal/blob/master/modules/reduce/CHANGELOG.md)

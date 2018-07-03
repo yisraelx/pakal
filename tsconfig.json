@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "es2015"
+    ],
+    "declaration": false,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@pakal/*": [
+        "./modules/*"
+      ]
+    }
+  },
+  "include": [
+      "./modules/**/*.ts",
+      "./alias/**/*.ts"
+  ]
+}

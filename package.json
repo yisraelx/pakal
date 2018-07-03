@@ -1,0 +1,116 @@
+{
+    "private": true,
+    "name": "pakal-repo",
+    "description": "Pakal library repository",
+    "keywords": [
+        "utils",
+        "utilities",
+        "modules",
+        "modular"
+    ],
+    "license": "MIT",
+    "author": {
+        "email": "yisraelx@gmail.com",
+        "name": "Yisrael Eliav",
+        "url": "https://github.com/yisraelx"
+    },
+    "homepage": "https://github.com/yisraelx/pakal#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yisraelx/pakal.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yisraelx/pakal/issues"
+    },
+    "scripts": {
+        "build": "run-p build:*",
+        "build:rollup": "lerna exec \"ts-node ../../scripts/build-rollup.ts\"",
+        "build:tsc": "tsc -p tsconfig.build.json",
+        "ci:after": "yarn coverage",
+        "ci:script": "yarn test",
+        "clean": "rimraf \"./{modules,alias}/**/{*.{d.ts,js,js.map},.npmignore,LICENSE,README.md}\" coverage",
+        "cm": "git-cz",
+        "commitmsg": "commitlint -e $GIT_PARAMS",
+        "coverage": "codecov -f ./coverage/coverage-final.json",
+        "create:ignore": "lerna exec \"ts-node ../../scripts/create-ignore.ts\"",
+        "create:license": "lerna exec \"ts-node ../../scripts/create-license.ts\"",
+        "create:readme": "lerna exec \"ts-node  -r tsconfig-paths/register ../../scripts/create-readme.ts\"",
+        "create:packages-list": "ts-node ./scripts/create-packages-list.ts",
+        "lint": "tslint -e **/*.d.ts modules/**/*.ts",
+        "make": "run-s clean build create:*",
+        "precommit": "run-s lint test",
+        "prerelease": "run-s make",
+        "postrelease": "conventional-github-releaser -p angular",
+        "pretest": "yarn clean",
+        "release": "lerna publish --conventional-commits --message \"chore: publish %s\"",
+        "test": "jest",
+        "watch": "yarn build:tsc --watch"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^7.0.0",
+        "@commitlint/config-conventional": "^7.0.1",
+        "@commitlint/prompt": "^7.0.0",
+        "@types/handlebars": "^4.0.38",
+        "@types/jest": "^23.1.1",
+        "@types/node": "^10.1.2",
+        "codecov": "^3.0.2",
+        "commitizen": "^2.10.1",
+        "conventional-github-releaser": "^3.1.2",
+        "handlebars": "^4.0.11",
+        "husky": "^0.14.3",
+        "jest": "^22.4.4",
+        "lerna": "^2.11.0",
+        "npm-run-all": "^4.1.3",
+        "parse-comments": "^0.4.3",
+        "rimraf": "^2.6.2",
+        "rollup": "^0.59.2",
+        "rollup-plugin-alias": "^1.4.0",
+        "rollup-plugin-cleanup": "^3.0.0-beta.1",
+        "rollup-plugin-node-resolve": "^3.3.0",
+        "rollup-plugin-typescript": "^0.8.1",
+        "rollup-plugin-uglify": "^4.0.0",
+        "ts-jest": "^22.4.6",
+        "ts-node": "^7.0.0",
+        "tsconfig-paths": "^3.3.2",
+        "tslib": "^1.9.3",
+        "tslint": "^5.10.0",
+        "typescript": "^2.9.2",
+        "yarn": "^1.7.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "@commitlint/prompt"
+        }
+    },
+    "jest": {
+        "moduleFileExtensions": [
+            "ts",
+            "js",
+            "json"
+        ],
+        "globals": {
+            "ts-jest": {
+                "tsConfigFile": "tsconfig.json"
+            }
+        },
+        "moduleNameMapper": {
+            "@pakal/(.*)": "<rootDir>/modules/$1"
+        },
+        "transform": {
+            ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        },
+        "testMatch": [
+            "<rootDir>/modules/**/__tests__/**/*.ts"
+        ],
+        "collectCoverageFrom": [
+            "<rootDir>/modules/**/*.ts",
+            "!<rootDir>/modules/-*/**/*.ts"
+        ],
+        "collectCoverage": true,
+        "coverageReporters": [
+            "json",
+            "text-summary",
+            "html"
+        ]
+    }
+}
