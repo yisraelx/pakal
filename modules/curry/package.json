@@ -1,6 +1,6 @@
 {
   "name": "@pakal/curry",
-  "version": "0.0.0-PLACEHOLDER",
+  "version": "0.1.0",
   "description": "Curry is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
@@ -28,6 +28,6 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/arity": "0.0.0-PLACEHOLDER"
+    "@pakal/arity": "^0.1.0"
   }
 }

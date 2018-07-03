@@ -1,6 +1,6 @@
 {
   "name": "@pakal/for-each",
-  "version": "0.0.0-PLACEHOLDER",
+  "version": "0.1.0",
   "description": "ForEach is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
@@ -28,6 +28,6 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/keys": "0.0.0-PLACEHOLDER"
+    "@pakal/keys": "^0.1.0"
   }
 }

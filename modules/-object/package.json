@@ -1,6 +1,6 @@
 {
   "name": "@pakal/-object",
-  "version": "0.0.0-PLACEHOLDER",
+  "version": "0.1.0",
   "description": "Object is a group of packages of Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
@@ -28,7 +28,7 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/assign": "0.0.0-PLACEHOLDER",
-    "@pakal/keys": "0.0.0-PLACEHOLDER"
+    "@pakal/assign": "^0.1.0",
+    "@pakal/keys": "^0.1.0"
   }
 }

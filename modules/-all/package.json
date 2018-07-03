@@ -1,6 +1,6 @@
 {
   "name": "@pakal/-all",
-  "version": "0.0.0-PLACEHOLDER",
+  "version": "0.1.0",
   "description": "All is a group of packages of Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
@@ -28,12 +28,12 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/arity": "0.0.0-PLACEHOLDER",
-    "@pakal/assertify": "0.0.0-PLACEHOLDER",
-    "@pakal/assign": "0.0.0-PLACEHOLDER",
-    "@pakal/curry": "0.0.0-PLACEHOLDER",
-    "@pakal/for-each": "0.0.0-PLACEHOLDER",
-    "@pakal/keys": "0.0.0-PLACEHOLDER",
-    "@pakal/reduce": "0.0.0-PLACEHOLDER"
+    "@pakal/arity": "^0.1.0",
+    "@pakal/assertify": "^0.1.0",
+    "@pakal/assign": "^0.1.0",
+    "@pakal/curry": "^0.1.0",
+    "@pakal/for-each": "^0.1.0",
+    "@pakal/keys": "^0.1.0",
+    "@pakal/reduce": "^0.1.0"
   }
 }
