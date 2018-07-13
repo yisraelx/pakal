@@ -7,6 +7,8 @@
   "module": "index.esm.js",
   "es2015": "index.es6.js",
   "typings": "index.d.ts",
+  "sideEffects": false,
+  "sideEffects": false,
   "author": {
     "name": "Yisrael Eliev",
     "url": "https://github.com/yisraelx",
