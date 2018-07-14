@@ -1,6 +1,6 @@
 {
   "name": "@pakal/arity",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Arity is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",

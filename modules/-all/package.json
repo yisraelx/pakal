@@ -1,13 +1,12 @@
 {
   "name": "@pakal/-all",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "All is a group of packages of Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
   "module": "index.esm.js",
   "es2015": "index.es6.js",
   "typings": "index.d.ts",
-  "sideEffects": false,
   "sideEffects": false,
   "author": {
     "name": "Yisrael Eliev",
@@ -30,12 +29,12 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/arity": "^0.1.0",
-    "@pakal/assertify": "^0.1.0",
-    "@pakal/assign": "^0.1.0",
-    "@pakal/curry": "^0.1.0",
-    "@pakal/for-each": "^0.1.0",
-    "@pakal/keys": "^0.1.0",
-    "@pakal/reduce": "^0.1.0"
+    "@pakal/arity": "^0.1.1",
+    "@pakal/assertify": "^0.1.1",
+    "@pakal/assign": "^0.1.1",
+    "@pakal/curry": "^0.1.1",
+    "@pakal/for-each": "^0.1.1",
+    "@pakal/keys": "^0.1.1",
+    "@pakal/reduce": "^0.1.1"
   }
 }

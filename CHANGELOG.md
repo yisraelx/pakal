@@ -9,12 +9,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-**Note:** Version bump only for package @pakal/arity
-
-<a name="0.1.0"></a>
-# 0.1.0 (2018-07-03)
-
-
-### Features
-
-* first commit ([f624294](https://github.com/yisraelx/pakal/commit/f624294))
+**Note:** Version bump only for package pakal-repo

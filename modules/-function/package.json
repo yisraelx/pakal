@@ -1,6 +1,6 @@
 {
   "name": "@pakal/-function",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Function is a group of packages of Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
@@ -29,8 +29,8 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/arity": "^0.1.0",
-    "@pakal/assertify": "^0.1.0",
-    "@pakal/curry": "^0.1.0"
+    "@pakal/arity": "^0.1.1",
+    "@pakal/assertify": "^0.1.1",
+    "@pakal/curry": "^0.1.1"
   }
 }
