@@ -40,7 +40,7 @@ describe(`forEach()`, () => {
         expect(result).toBe(1);
     });
 
-    it('should iteratee with identity function and return the collection', ()=>{
+    it('should iteratee with identity function and return the collection', () => {
         let object = {foo: 'bar'};
         let result = forEach(object);
 

@@ -17,13 +17,14 @@ import forEach from '@pakal/for-each';
  *      if(value % 2 === 0){
  *          result.push(value);
  *      }
+ *      return result;
  *  }, []);
  *
  *  console.log(result); // => [2, 4]
  *
  * @example
  *
- *  let object: {[key: string: number]} = {a: 1, b: 2,c: 3};
+ *  let object: {[key: string: number]} = {a: 1, b: 2, c: 3};
  *
  *  let result: number = reduce(object, (value: number, key: string, object: {[key: string: number]}) => {
  *      return result + value;

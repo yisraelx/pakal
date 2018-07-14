@@ -15,7 +15,7 @@ import forEach from '@pakal/for-each';
  * @example
  *
  *  let target = {a: 2, c: 3};
- *  let source = {a: 1, b:2};
+ *  let source = {a: 1, b: 2};
  *
  *  assign(target, source); // => {a: 1, b: 2, c: 3}
  */

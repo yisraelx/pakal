@@ -1,13 +1,13 @@
 import * as Handlebars from 'handlebars';
 import * as parseComments from 'parse-comments';
-import { join } from 'path';
+import { basename, join, dirname, resolve } from 'path';
 import { readFileSync, writeFileSync } from 'fs';
 
 let rootPackage = process.cwd();
 let packageJson = require(join(rootPackage, 'package.json'));
 let name = packageJson.name.replace(/^.*\/[-_]?/, '');
 let camelName = camelPackageName(packageJson.name);
-let isGroup = /^@pakal\/-.*/.test(packageJson.name);
+let isGroup = /^(pakal|@pakal\/-.*)/.test(packageJson.name);
 let isInternal = /^@pakal\/_.*/.test(packageJson.name);
 
 let data = {
@@ -18,7 +18,8 @@ let data = {
         fullName: packageJson.name,
         subName: packageJson.name.replace(/^.*\//, ''),
         name,
-        description: packageJson.description
+        description: packageJson.description,
+        dir: basename(dirname(resolve('.')))
     },
     comments: getComments('./index.ts')
 };
@@ -56,10 +57,10 @@ ${examples.join('\n')}
 
 Handlebars.registerPartial('header', `
 # {{ package.fullName }}
-[![Source Code](https://img.shields.io/badge/%3C%2F%3E-source_code-blue.svg)]({{repo.url}}/blob/master/modules/{{package.subName}})
+[![Source Code](https://img.shields.io/badge/%3C%2F%3E-source_code-blue.svg)]({{repo.url}}/blob/master/{{package.dir}}/{{package.subName}})
 [![Version](https://img.shields.io/npm/v/{{package.fullName}}.svg)](https://www.npmjs.com/package/{{package.fullName}})
 [![MIT License](https://img.shields.io/npm/l/{{package.fullName}}.svg)]({{repo.url}}/blob/master/LICENSE)
-[![Bundle Size](https://img.shields.io/bundlephobia/min/{{package.subName}}.svg)](https://bundlephobia.com/result?p={{package.subName}})
+[![Bundle Size](https://img.shields.io/bundlephobia/min/{{package.fullName}}.svg)](https://bundlephobia.com/result?p={{package.fullName}})
 
 {{#if package.description}}
 **{{ package.description }}**

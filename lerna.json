@@ -4,5 +4,5 @@
         "modules/*",
         "alias/*"
     ],
-    "version": "independent"
+    "version": "0.1.0"
 }

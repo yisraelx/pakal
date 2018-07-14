@@ -34,8 +34,8 @@ describe(`assertity()`, () => {
 
         object.isNum = assertity(object.isNum, 'is not num') as any;
         expect(object.isNum(55)).toBeUndefined();
-        expect(()=>{
+        expect(() => {
             object.isNum(33);
-        }).toThrowError('is not num')
+        }).toThrowError('is not num');
     });
 });

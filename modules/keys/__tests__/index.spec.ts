@@ -21,10 +21,10 @@ describe(`keys()`, () => {
     });
 
     it('should return class keys without parent keys', () => {
-        class A{
+        class A {
             static color = 'red';
         }
-        class B extends A{
+        class B extends A {
             static foo = 'bar';
         }
         let classKeys = keys(B);
