@@ -1,6 +1,6 @@
-/**
+/*!
  * @module @pakal/-all
- * @copyright © 2018 Yisrael Eliav <yisraelx@gmail.com> (https://github.com/yisraelx)
+ * @copyright © Yisrael Eliav <yisraelx@gmail.com> (https://github.com/yisraelx)
  * @license MIT
  */
 
@@ -11,3 +11,4 @@ export { default as curry, __ } from '@pakal/curry';
 export { default as forEach } from '@pakal/for-each';
 export { default as keys } from '@pakal/keys';
 export { default as reduce } from '@pakal/reduce';
+export { default as typeOf, $bigint,  $boolean,  $function,  $null,  $number,  $object,  $string,  $symbol,  $undefined, ITypeKeys  } from '@pakal/type-of';
