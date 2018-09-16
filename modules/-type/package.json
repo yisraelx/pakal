@@ -30,6 +30,7 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
+    "@pakal/kind-of": "0.0.0-PLACEHOLDER",
     "@pakal/tag-of": "0.0.0-PLACEHOLDER",
     "@pakal/type-of": "0.0.0-PLACEHOLDER"
   }
