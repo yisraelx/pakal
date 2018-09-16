@@ -11,4 +11,5 @@ export { default as curry, __ } from '@pakal/curry';
 export { default as forEach } from '@pakal/for-each';
 export { default as keys } from '@pakal/keys';
 export { default as reduce } from '@pakal/reduce';
+export { default as tagOf } from '@pakal/tag-of';
 export { default as typeOf, $bigint,  $boolean,  $function,  $null,  $number,  $object,  $string,  $symbol,  $undefined, ITypeKeys  } from '@pakal/type-of';
