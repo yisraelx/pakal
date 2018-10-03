@@ -1,7 +1,7 @@
 {
-  "name": "@pakal/-all",
-  "version": "0.1.1",
-  "description": "All is a group of packages of Pakal library",
+  "name": "@pakal/-util",
+  "version": "0.0.0-PLACEHOLDER",
+  "description": "Util is a group of packages of Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
   "module": "index.esm.js",
@@ -30,16 +30,6 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/arity": "^0.1.1",
-    "@pakal/assertify": "^0.1.1",
-    "@pakal/assign": "^0.1.1",
-    "@pakal/curry": "^0.1.1",
-    "@pakal/for-each": "^0.1.1",
-    "@pakal/keys": "^0.1.1",
-    "@pakal/kind-of": "0.0.0-PLACEHOLDER",
-    "@pakal/reduce": "^0.1.1",
-    "@pakal/tag-of": "0.0.0-PLACEHOLDER",
-    "@pakal/type-of": "0.0.0-PLACEHOLDER",
     "@pakal/unique-id": "0.0.0-PLACEHOLDER"
   }
 }
