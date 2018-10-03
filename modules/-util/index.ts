@@ -5,3 +5,4 @@
  */
 
 export { default as uniqueId } from '@pakal/unique-id';
+export { default as uniqueKey } from '@pakal/unique-key';
