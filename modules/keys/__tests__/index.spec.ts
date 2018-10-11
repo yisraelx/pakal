@@ -1,33 +1,37 @@
-import keys from '../';
+let keys = require('../').default;
+jest.resetModules();
+let Object_keys = Object.keys;
+delete Object.keys;
+let _keys = require('../').default;
+Object.keys = Object_keys;
 
-let tests = [
-    {object: 1, result: []},
-    {object: true, result: []},
-    {object: null, result: []},
-    {object: void 0, result: []},
-    {object: [], result: []},
-    {object: {}, result: []},
-    {object: [1, 2, 3], result: ['0', '1', '2']},
-    {object: {a: 1, b: 2, c: 3}, result: ['a', 'b', 'c']},
-    {object: 'abc', result: ['0', '1', '2']},
-];
+describe.each([['keys', keys], ['_keys', _keys]])('%s', (label, keys) => {
+  it('should be a function', () => {
+    expect(keys).toBeFunction();
+  });
 
-describe(`keys()`, () => {
-    tests.forEach(({object, result}) => {
-        it(`should be get ${JSON.stringify(object)} and return ${JSON.stringify(result)}`, () => {
-            let objectKeys: string[] = keys(object as any);
-            expect(objectKeys).toEqual(result);
-        });
-    });
+  it('should return empty array for nil target', () => {
+    expect(keys(null)).toEqual([]);
+    expect(keys(undefined)).toEqual([]);
+  });
 
-    it('should return class keys without parent keys', () => {
-        class A {
-            static color = 'red';
-        }
-        class B extends A {
-            static foo = 'bar';
-        }
-        let classKeys = keys(B);
-        expect(classKeys).toEqual(['foo']);
-    });
+  it('should return keys of object', () => {
+    expect(keys({a: 1, b: 2, c: 3})).toEqual(['a', 'b', 'c']);
+  });
+
+  it('should return keys of array', () => {
+    expect(keys([1, 2, 3])).toEqual(['0', '1', '2']);
+  });
+
+  it('should return keys of string', () => {
+    expect(keys('abc')).toEqual(['0', '1', '2']);
+  });
+
+  it('should return only enumerable keys', () => {
+    expect(keys(Object.defineProperties({foo: 'bar'}, {name: {value: 'bob'}}))).toEqual(['foo']);
+  });
+
+  it('should return only own keys', () => {
+    expect(keys(Object.setPrototypeOf({color: 'red'}, {name: 'alice'}))).toEqual(['color']);
+  });
 });
