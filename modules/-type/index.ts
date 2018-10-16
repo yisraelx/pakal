@@ -4,6 +4,7 @@
  * @license MIT
  */
 
+export { default as isKindOf } from '@pakal/is-kind-of';
 export { default as isTypeOf } from '@pakal/is-type-of';
 export { default as kindOf } from '@pakal/kind-of';
 export { default as tagOf } from '@pakal/tag-of';
