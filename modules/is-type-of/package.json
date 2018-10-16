@@ -1,13 +1,13 @@
 {
-  "name": "@pakal/-type",
+  "name": "@pakal/is-type-of",
   "version": "0.0.0-PLACEHOLDER",
-  "description": "Type is a group of packages of Pakal library",
+  "description": "Is Type Of is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
   "module": "index.esm.js",
   "esnext": "index.es.js",
   "types": "index.d.ts",
-  "global": "_",
+  "global": "_.isTypeOf",
   "sideEffects": false,
   "author": {
     "name": "Yisrael Eliev",
@@ -15,6 +15,10 @@
     "email": "yisraelx@gmail.com"
   },
   "license": "MIT",
+  "groups": [
+    "all",
+    "type"
+  ],
   "keywords": [
     "utils",
     "utilities",
@@ -30,9 +34,7 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/is-type-of": "0.0.0-PLACEHOLDER",
-    "@pakal/kind-of": "0.0.0-PLACEHOLDER",
-    "@pakal/tag-of": "0.0.0-PLACEHOLDER",
+    "@pakal/assertify": "^0.1.1",
     "@pakal/type-of": "0.0.0-PLACEHOLDER"
   }
 }
