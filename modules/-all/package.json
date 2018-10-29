@@ -41,6 +41,7 @@
     "@pakal/keys": "^0.1.1",
     "@pakal/kind-of": "0.0.0-PLACEHOLDER",
     "@pakal/reduce": "^0.1.1",
+    "@pakal/safify": "0.0.0-PLACEHOLDER",
     "@pakal/tag-of": "0.0.0-PLACEHOLDER",
     "@pakal/tryify": "0.0.0-PLACEHOLDER",
     "@pakal/type-of": "0.0.0-PLACEHOLDER",

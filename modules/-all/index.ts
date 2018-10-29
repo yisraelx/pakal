@@ -15,6 +15,7 @@ export { default as isTypeOf } from '@pakal/is-type-of';
 export { default as keys } from '@pakal/keys';
 export { default as kindOf } from '@pakal/kind-of';
 export { default as reduce } from '@pakal/reduce';
+export { default as safify } from '@pakal/safify';
 export { default as tagOf } from '@pakal/tag-of';
 export { default as tryify } from '@pakal/tryify';
 export { default as typeOf, $bigint,  $boolean,  $function,  $null,  $number,  $object,  $string,  $symbol,  $undefined, ITypeKeys  } from '@pakal/type-of';
