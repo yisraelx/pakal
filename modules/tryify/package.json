@@ -1,13 +1,13 @@
 {
-  "name": "@pakal/-function",
-  "version": "0.1.1",
-  "description": "Function is a group of packages of Pakal library",
+  "name": "@pakal/tryify",
+  "version": "0.0.0-PLACEHOLDER",
+  "description": "Tryify is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
   "module": "index.esm.js",
   "esnext": "index.es.js",
   "types": "index.d.ts",
-  "global": "_",
+  "global": "_.tryify",
   "sideEffects": false,
   "author": {
     "name": "Yisrael Eliev",
@@ -15,6 +15,10 @@
     "email": "yisraelx@gmail.com"
   },
   "license": "MIT",
+  "groups": [
+    "all",
+    "function"
+  ],
   "keywords": [
     "utils",
     "utilities",
@@ -30,9 +34,6 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/arity": "^0.1.1",
-    "@pakal/assertify": "^0.1.1",
-    "@pakal/curry": "^0.1.1",
-    "@pakal/tryify": "0.0.0-PLACEHOLDER"
+    "@pakal/arity": "^0.1.1"
   }
 }
