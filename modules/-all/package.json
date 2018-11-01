@@ -43,6 +43,7 @@
     "@pakal/reduce": "^0.1.1",
     "@pakal/safify": "0.0.0-PLACEHOLDER",
     "@pakal/tag-of": "0.0.0-PLACEHOLDER",
+    "@pakal/to-primitive": "0.0.0-PLACEHOLDER",
     "@pakal/tryify": "0.0.0-PLACEHOLDER",
     "@pakal/type-of": "0.0.0-PLACEHOLDER",
     "@pakal/unique-id": "0.0.0-PLACEHOLDER",
