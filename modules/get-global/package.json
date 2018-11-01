@@ -1,13 +1,13 @@
 {
-  "name": "@pakal/-util",
+  "name": "@pakal/get-global",
   "version": "0.0.0-PLACEHOLDER",
-  "description": "Util is a group of packages of Pakal library",
+  "description": "Get Global is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
   "module": "index.esm.js",
   "esnext": "index.es.js",
   "types": "index.d.ts",
-  "global": "_",
+  "global": "_.getGlobal",
   "sideEffects": false,
   "author": {
     "name": "Yisrael Eliev",
@@ -15,6 +15,10 @@
     "email": "yisraelx@gmail.com"
   },
   "license": "MIT",
+  "groups": [
+    "all",
+    "util"
+  ],
   "keywords": [
     "utils",
     "utilities",
@@ -28,10 +32,5 @@
   },
   "bugs": {
     "url": "https://github.com/yisraelx/pakal/issues"
-  },
-  "dependencies": {
-    "@pakal/get-global": "0.0.0-PLACEHOLDER",
-    "@pakal/unique-id": "0.0.0-PLACEHOLDER",
-    "@pakal/unique-key": "0.0.0-PLACEHOLDER"
   }
 }

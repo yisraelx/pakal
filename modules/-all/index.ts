@@ -9,6 +9,7 @@ export { default as assertify } from '@pakal/assertify';
 export { default as assign } from '@pakal/assign';
 export { default as curry, __ } from '@pakal/curry';
 export { default as forEach } from '@pakal/for-each';
+export { default as getGlobal } from '@pakal/get-global';
 export { default as isKindOf } from '@pakal/is-kind-of';
 export { default as isNative } from '@pakal/is-native';
 export { default as isTypeOf } from '@pakal/is-type-of';
