@@ -1,34 +1,41 @@
 {
-  "name": "@pakal/for-each",
-  "version": "0.1.1",
-  "description": "ForEach is package from Pakal library",
-  "main": "index.js",
-  "browser": "bundle.umd.js",
-  "module": "index.esm.js",
-  "es2015": "index.es6.js",
-  "typings": "index.d.ts",
-  "sideEffects": false,
-  "author": {
-    "name": "Yisrael Eliev",
-    "url": "https://github.com/yisraelx",
-    "email": "yisraelx@gmail.com"
-  },
-  "license": "MIT",
-  "keywords": [
-    "utils",
-    "utilities",
-    "modules",
-    "modular"
-  ],
-  "homepage": "https://github.com/yisraelx/pakal#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yisraelx/pakal.git"
-  },
-  "bugs": {
-    "url": "https://github.com/yisraelx/pakal/issues"
-  },
-  "dependencies": {
-    "@pakal/keys": "^0.1.1"
-  }
+    "name": "@pakal/for-each",
+    "version": "0.1.1",
+    "description": "ForEach is package from Pakal library",
+    "main": "index.js",
+    "browser": "bundle.umd.js",
+    "module": "index.esm.js",
+    "esnext": "index.es.js",
+    "types": "index.d.ts",
+    "global": "_.forEach",
+    "sideEffects": false,
+    "author": {
+        "name": "Yisrael Eliev",
+        "url": "https://github.com/yisraelx",
+        "email": "yisraelx@gmail.com"
+    },
+    "license": "MIT",
+    "groups": [
+      "all",
+      "collection"
+    ],
+    "keywords": [
+        "utils",
+        "utilities",
+        "modules",
+        "modular"
+    ],
+    "homepage": "https://github.com/yisraelx/pakal#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yisraelx/pakal.git"
+    },
+    "bugs": {
+        "url": "https://github.com/yisraelx/pakal/issues"
+    },
+    "dependencies": {
+        "@pakal/is-type-of": "0.0.0-PLACEHOLDER",
+        "@pakal/keys": "^0.1.1",
+        "@pakal/type-of": "0.0.0-PLACEHOLDER"
+    }
 }
