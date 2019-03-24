@@ -5,8 +5,9 @@
   "main": "index.js",
   "browser": "bundle.umd.js",
   "module": "index.esm.js",
-  "es2015": "index.es6.js",
-  "typings": "index.d.ts",
+  "esnext": "index.es.js",
+  "types": "index.d.ts",
+  "global": "_",
   "sideEffects": false,
   "author": {
     "name": "Yisrael Eliev",

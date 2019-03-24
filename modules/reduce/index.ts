@@ -1,14 +1,13 @@
-/**
+/*!
  * @module @pakal/reduce
- * @copyright © 2018 Yisrael Eliav <yisraelx@gmail.com> (https://github.com/yisraelx)
+ * @copyright © Yisrael Eliav <yisraelx@gmail.com> (https://github.com/yisraelx)
  * @license MIT
  */
+
 import forEach from '@pakal/for-each';
 
 /**
- * @function
- * @category collection
- * @see https://mdn.io/Array.prototype.reduce
+ *
  * @example
  *
  *  let array: string[] = [1, 2, 3, 4, 5];
@@ -31,17 +30,18 @@ import forEach from '@pakal/for-each';
  *  });
  *
  *  console.log(result); // => 6
+ *
  */
-function reduce<T extends ArrayLike<any>, R>(array: T, iteratee?: (accumulator: R, value: T[keyof T & number], index: number, array: T) => void, accumulator?: R): R;
-function reduce<T extends object, R>(object: T, iteratee?: (accumulator: R, value: T[keyof T], key: keyof T, object: T) => void, accumulator?: R): R;
-function reduce(collection: any, iteratee: Function = (v => v), accumulator?: any) {
-    let init: boolean = arguments.length > 2;
+function reduce<T extends ArrayLike<any>, R>(array: T, callback?: (accumulator: R, value: T[keyof T & number], index: number, array: T) => void, accumulator?: R): R;
+function reduce<T extends object, R>(object: T, callback?: (accumulator: R, value: T[keyof T], key: keyof T, object: T) => void, accumulator?: R): R;
+function reduce(collection: any, callback: any = ((v) => v), accumulator?: any): any {
+  let init: boolean = arguments.length > 2;
 
-    forEach(collection, (value, key, collection) => {
-        accumulator = init ? iteratee(accumulator, value, key, collection) : (init = true, value);
-    });
+  forEach(collection, (value, key) => {
+    accumulator = init ? callback(accumulator, value, key, collection) : (init = true, value);
+  });
 
-    return accumulator;
+  return accumulator;
 }
 
 export default reduce;

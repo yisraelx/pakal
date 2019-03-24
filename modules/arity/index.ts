@@ -1,15 +1,18 @@
-/**
+/*!
  * @module @pakal/arity
- * @copyright © 2018 Yisrael Eliav <yisraelx@gmail.com> (https://github.com/yisraelx)
+ * @copyright © Yisrael Eliav <yisraelx@gmail.com> (https://github.com/yisraelx)
  * @license MIT
  */
 
 // functions storage
-const FUNCTIONS: { [index: number]: Function } = {};
+const FUNCTIONS: {[index: number]: Function} = {};
 
 /**
- * @function
- * @category function
+ * Creates a wrapper function for `fn` with the given `length`.
+ *
+ * @param fn - The function to wrap.
+ * @param length - A length for the wrapped function.
+ * @returns Returns A new function with the given `length`, that wrapped `fn`.
  * @example
  *
  *  let fn = arity((...args) => args, 3);
@@ -18,21 +21,20 @@ const FUNCTIONS: { [index: number]: Function } = {};
  *  fn('a', 'b', 'c'); // => ['a', 'b', 'c']
  *  fn('a', 'b'); // => ['a', 'b']
  *  fn.length; // => 3
+ *
  */
-function arity(fn: (...args: any[]) => any, length: number = fn.length): (...args: any[]) => any {
+function arity<TFn extends (...args: any[]) => any>(fn: TFn, length: number = fn.length): ((...args: any[]) => ReturnType<TFn>) | any {
+  if (!FUNCTIONS[length]) {
+    let params: string[] = [];
 
-    if (!FUNCTIONS[length]) {
-        let params: string[] = [];
-        for (var index = 0; index < length; index++) {
-            params.push(`p${index}`);
-        }
-
-        FUNCTIONS[length] = new Function(`fn`, `return function (${params.join(', ')}){
-            return fn.apply(this, arguments);
-        };`);
+    for (let index = 0; index < length; index++) {
+      params.push(`p${ index }`);
     }
 
-    return FUNCTIONS[length](fn);
+    FUNCTIONS[length] = new Function(`fn`, `return function (${ params.join(', ') }){ return fn.apply(this, arguments); };`);
+  }
+
+  return FUNCTIONS[length](fn);
 }
 
 export default arity;
