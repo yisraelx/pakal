@@ -1,8 +1,16 @@
 {
-  "lerna": "2.11.0",
-  "packages": [
-    "modules/*",
-    "alias/*"
-  ],
-  "version": "0.1.1"
+  "lerna": "3.13.1",
+  "version": "0.1.1",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "message": "chore(release): publish %s",
+      "conventionalCommits": true,
+      "commitHooks": false
+    },
+    "exec": {
+      "private": false
+    }
+  }
 }

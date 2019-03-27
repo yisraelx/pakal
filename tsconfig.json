@@ -2,21 +2,25 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "lib": [
-      "es2015"
-    ],
-    "declaration": false,
-    "sourceMap": true,
     "moduleResolution": "node",
-    "baseUrl": "./",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "noEmit": true,
+    "lib": [
+      "esnext"
+    ],
+    "baseUrl": ".",
     "paths": {
       "@pakal/*": [
         "./modules/*"
+      ],
+      "*": [
+        "./alias/*"
       ]
     }
   },
-  "include": [
-      "./modules/**/*.ts",
-      "./alias/**/*.ts"
+  "exclude": [
+    "**/node_modules"
   ]
 }

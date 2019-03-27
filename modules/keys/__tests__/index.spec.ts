@@ -1,11 +1,7 @@
-let keys = require('../').default;
-jest.resetModules();
-let Object_keys = Object.keys;
-delete Object.keys;
-let _keys = require('../').default;
-Object.keys = Object_keys;
+import keys from '@pakal/keys';
+import { describeGlobalPatch } from '../../../config/utils/jest';
 
-describe.each([['keys', keys], ['_keys', _keys]])('%s', (label, keys) => {
+describeGlobalPatch<typeof keys>('keys()', 'Object.keys', '@pakal/keys', (keys) => {
   it('should be a function', () => {
     expect(keys).toBeFunction();
   });

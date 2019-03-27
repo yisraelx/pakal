@@ -10,19 +10,25 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 .changelog
-node_modules/
+node_modules
 
 ### Build
-coverage/
+.tmp
+.rpt2_cache
+coverage
 modules/**/.npmignore
 modules/**/LICENSE
 modules/**/README.md
 modules/**/*.js
-modules/**/*.js.map
+modules/**/*.map
 modules/**/*.d.ts
 alias/**/.npmignore
 alias/**/LICENSE
 alias/**/README.md
 alias/**/*.js
-alias/**/*.js.map
+alias/**/*.map
 alias/**/*.d.ts
+config/**/*.js
+config/**/*.map
+config/**/*.d.ts
+!config/types/**/*.d.ts
