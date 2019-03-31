@@ -1,6 +1,6 @@
 {
   "name": "@pakal/kind-of",
-  "version": "0.0.0-PLACEHOLDER",
+  "version": "0.2.0",
   "description": "Kind Of is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
@@ -34,7 +34,7 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/tag-of": "0.0.0-PLACEHOLDER",
-    "@pakal/type-of": "0.0.0-PLACEHOLDER"
+    "@pakal/tag-of": "^0.2.0",
+    "@pakal/type-of": "^0.2.0"
   }
 }

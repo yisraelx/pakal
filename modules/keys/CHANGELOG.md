@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/yisraelx/pakal/compare/v0.1.1...v0.2.0) (2019-03-31)
+
+
+### Performance Improvements
+
+* **keys:** Uses `Object.keys` if it exists ([bb4a7cd](https://github.com/yisraelx/pakal/commit/bb4a7cd))
+
+
+
+
+
 <a name="0.1.1"></a>
 ## [0.1.1](https://github.com/yisraelx/pakal/compare/v0.1.0...v0.1.1) (2018-07-14)
 

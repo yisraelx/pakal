@@ -1,6 +1,6 @@
 {
   "name": "@pakal/is-type-of",
-  "version": "0.0.0-PLACEHOLDER",
+  "version": "0.2.0",
   "description": "Is Type Of is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
@@ -34,7 +34,7 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/assertify": "^0.1.1",
-    "@pakal/type-of": "0.0.0-PLACEHOLDER"
+    "@pakal/assertify": "^0.2.0",
+    "@pakal/type-of": "^0.2.0"
   }
 }

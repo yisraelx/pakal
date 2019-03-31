@@ -1,6 +1,6 @@
 {
   "name": "@pakal/assign",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Assign is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
@@ -34,6 +34,6 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/for-each": "^0.1.1"
+    "@pakal/for-each": "^0.2.0"
   }
 }

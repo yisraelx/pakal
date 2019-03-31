@@ -1,6 +1,6 @@
 {
   "name": "@pakal/get-global",
-  "version": "0.0.0-PLACEHOLDER",
+  "version": "0.2.0",
   "description": "Get Global is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",

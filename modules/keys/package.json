@@ -1,6 +1,6 @@
 {
   "name": "@pakal/keys",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Keys is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
