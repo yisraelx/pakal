@@ -10,9 +10,28 @@ import forEach from '@pakal/for-each';
  *
  * @see https://mdn.io/Object.assign
  * @resource https://www.ecma-international.org/ecma-262/#sec-object.assign
+ * @remarks Unlike `Object.assign` this method will assign `ArrayLike` as `Array`.
  * @param target - The target object.
  * @param sources - The sources objects.
  * @returns Returns `target`.
+ * @example
+ *
+ *  let target = {};
+ *  let a = {length: 4,3: 'c', 5: 'e'};
+ *  let b = 'foo';
+ *  let c = [55, 33];
+ *  let d = {1: 'a', foo: 'bar'};"
+ *
+ *  assign(target, a, b, c, d) === target; // => true
+ *  console.log(target);
+ *  // => {
+ *  //  0: 55
+ *  //  1: "a"
+ *  //  2: "o"
+ *  //  3: "c"
+ *  //  foo: "bar"
+ *  // }
+ *
  * @example
  *
  *  let target = {a: 2, c: 3};

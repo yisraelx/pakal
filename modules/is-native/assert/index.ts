@@ -15,11 +15,11 @@ import isNative from '@pakal/is-native';
  * @throws Throws if `value` is not native function or prototype.
  * @example
  *
- *  assertNative('foo'); // => throw
- *  assertNative(function(){}); // => throw
- *  assertNative(true); // => throw
- *  assertNative(Promise.resolve); // => void
- *  assertNative(Function); // => void
+ *  assertNative('foo'); // => throw TypeError
+ *  assertNative(function(){}); // => throw TypeError
+ *  assertNative(true); // => throw TypeError
+ *  assertNative(Promise.resolve); // => Promise.resolve
+ *  assertNative(Function); // => Function
  *
  */
 // @ts-ignore

@@ -28,7 +28,7 @@ let _Function: any = (function() {
  *  getGlobal('String.prototype') === String.prototype; // => true
  *  getGlobal('Math.foo', 'bar'); // => 'bar'
  *  getGlobal('Math.zero', 0, true); // => 0
- *  getGlobal('Math).zero; // => 0
+ *  getGlobal('Math').zero; // => 0
  *
  * @example
  *

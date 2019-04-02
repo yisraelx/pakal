@@ -31,6 +31,18 @@ import forEach from '@pakal/for-each';
  *
  *  console.log(result); // => 6
  *
+ * @example
+ *
+ *  reduce('abc',(result: number, char: string) => {
+ *    return result + char.charCodeAt(0);
+ *  }, 0); // => 294
+ *
+ * @example
+ *
+ *  reduce({length: 3, 0: 1, 1: 2, 2: 3}, (result: number, num: number, index: number) => {
+ *    return result + (num * index);
+ *  }); // => 9
+ *
  */
 function reduce<T extends ArrayLike<any>, R>(array: T, callback?: (accumulator: R, value: T[keyof T & number], index: number, array: T) => void, accumulator?: R): R;
 function reduce<T extends object, R>(object: T, callback?: (accumulator: R, value: T[keyof T], key: keyof T, object: T) => void, accumulator?: R): R;
