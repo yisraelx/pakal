@@ -9,6 +9,7 @@ describe(`arity()`, () => {
     let fn = (a, b, c) => true;
     let arityFn = arity(fn, 0);
 
+    expect(arityFn).toBeFunction();
     expect(arityFn.length).toBe(0);
     expect(arityFn()).toBe(true);
     expect(arityFn(0, 1, 2)).toBe(true);
@@ -18,6 +19,7 @@ describe(`arity()`, () => {
     let fn = (...args) => args;
     let arityFn = arity(fn, 3);
 
+    expect(arityFn).toBeFunction();
     expect(arityFn.length).toBe(3);
     expect(arityFn('a', 'b', 'c', 'd')).toEqual(['a', 'b', 'c', 'd']);
     expect(arityFn('a', 'b', 'c')).toEqual(['a', 'b', 'c']);
@@ -27,6 +29,8 @@ describe(`arity()`, () => {
   it('should arity without length', () => {
     let arityFn = arity((a, b, c) => {
     });
+
+    expect(arityFn).toBeFunction();
     expect(arityFn.length).toBe(3);
   });
 
@@ -39,6 +43,8 @@ describe(`arity()`, () => {
     };
 
     object.multiply = arity(object.multiply, 3);
+    expect(object.multiply).toBeFunction();
+
     let result: number[] = object.multiply(1, 2, 3);
     expect(result).toEqual([2, 4, 6]);
   });

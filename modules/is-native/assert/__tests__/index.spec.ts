@@ -11,7 +11,8 @@ describe(`assertNative()`, () => {
   });
 
   it(`should throw error'`, () => {
-    expect(() => assertNative(function() {})).toThrow();
+    expect(() => assertNative(function() {
+    })).toThrow();
     expect(() => assertNative({})).toThrow();
   });
 });

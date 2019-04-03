@@ -77,4 +77,21 @@ describe(`assign()`, () => {
     let result = assign({}, B);
     expect(result).toEqual({animal: 'dog'});
   });
+
+  it('should assign ArrayLike as Array', () => {
+    let target = {};
+    let a = {length: 3, 2: 'b'};
+    let b = 'hi';
+    let c = [33];
+    let d = class {
+      static foo = 'bar';
+
+      constructor(a, b, c, d, e) {
+      }
+    };
+    let result = assign(target, a, b, c, d);
+
+    expect(result).toBe(target);
+    expect(target).toEqual({0: 33, 1: 'i', 2: 'b', foo: 'bar'});
+  });
 });

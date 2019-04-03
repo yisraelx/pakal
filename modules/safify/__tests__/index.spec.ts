@@ -8,6 +8,7 @@ describe(`safify()`, () => {
   it(`should wraps function and return on error result of failValue function`, () => {
     let safeObjectCreate = safify(Object.create, () => ({}));
 
+    expect(safeObjectCreate).toBeFunction();
     expect(safeObjectCreate.length).toBe(Object.create.length);
     expect(safeObjectCreate('foo' as any)).toEqual({});
     expect(safeObjectCreate([])).toBeInstanceOf(Array);
@@ -19,6 +20,8 @@ describe(`safify()`, () => {
     }
 
     let safeHas = safify(has, false);
+
+    expect(safeHas).toBeFunction();
     expect(safeHas.length).toBe(2);
     expect(safeHas('foo' as any, 'toString')).toBeFalsy();
     expect(safeHas([], 0)).toBeFalsy();
@@ -28,6 +31,7 @@ describe(`safify()`, () => {
   it(`should wraps prototype function `, () => {
     let safeIsPrototypeOf = safify(Object.prototype.isPrototypeOf, false);
 
+    expect(safeIsPrototypeOf).toBeFunction();
     expect(safeIsPrototypeOf.length).toBe(Object.prototype.isPrototypeOf.length);
     expect(safeIsPrototypeOf.call(null, null)).toBeFalsy();
     expect(safeIsPrototypeOf.call(Function.prototype, Object.prototype)).toBeFalsy();

@@ -8,6 +8,8 @@ describe(`assertity()`, () => {
   it(`should assert and throw message`, () => {
     let isString = (value) => typeof value === 'string';
     let assertString = assertity(isString, 'The value is not string.');
+
+    expect(assertString).toBeFunction();
     expect(() => {
       assertString(777);
     }).toThrowError('The value is not string');
@@ -21,6 +23,7 @@ describe(`assertity()`, () => {
       return `${ that } !== ${ other }`;
     });
 
+    expect(assertToBe).toBeFunction();
     expect(() => {
       assertToBe(1, 2);
     }).toThrowError('1 !== 2');
@@ -37,6 +40,8 @@ describe(`assertity()`, () => {
     };
 
     object.isNum = assertity(object.isNum, 'is not num') as any;
+
+    expect(object.isNum).toBeFunction();
     expect(object.isNum(55)).toBe(55);
     expect(() => {
       object.isNum(33);
@@ -87,6 +92,8 @@ describe(`assertity()`, () => {
         return this.ok;
       }, null, 1),
     };
+
+    expect(object.fn).toBeFunction();
     expect(object.fn('a', 'b')).toBe('b');
   });
 
