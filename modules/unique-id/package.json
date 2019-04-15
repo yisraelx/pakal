@@ -1,6 +1,6 @@
 {
   "name": "@pakal/unique-id",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Unique Id is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",

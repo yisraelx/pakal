@@ -1,6 +1,6 @@
 {
   "name": "@pakal/tryify",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Tryify is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
@@ -34,6 +34,6 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/arity": "^0.2.0"
+    "@pakal/arity": "^0.2.1"
   }
 }

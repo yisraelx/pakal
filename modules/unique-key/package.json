@@ -1,6 +1,6 @@
 {
   "name": "@pakal/unique-key",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Unique Key is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
@@ -34,6 +34,6 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/unique-id": "^0.2.0"
+    "@pakal/unique-id": "^0.2.1"
   }
 }

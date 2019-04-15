@@ -1,6 +1,6 @@
 {
   "name": "pakal",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Pakal is utilities modules, written in typescript.",
   "main": "index.js",
   "browser": "bundle.umd.js",
@@ -30,6 +30,6 @@
     "url": "https://github.com/yisraelx/pakal/issues"
   },
   "dependencies": {
-    "@pakal/-all": "^0.2.0"
+    "@pakal/-all": "^0.2.1"
   }
 }

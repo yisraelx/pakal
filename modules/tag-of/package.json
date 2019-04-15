@@ -1,6 +1,6 @@
 {
   "name": "@pakal/tag-of",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Tag Of is package from Pakal library",
   "main": "index.js",
   "browser": "bundle.umd.js",
