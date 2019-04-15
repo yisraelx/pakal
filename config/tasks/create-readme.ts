@@ -35,7 +35,10 @@ Handlebars.registerHelper('docs', function(path: string) {
 
   let md: string = '';
   let examples: string = extractTag('examples')
-    .map((example: string) => `\`\`\`typescript\n${ example.replace(/^\n+|\n+$/g, '') }\n\`\`\``)
+    .map((example: string) => `\`\`\`typescript\n${ example
+      .replace(/^\n+|\n+$/g, '') // remove extra break line
+      .replace(/\\([@{}])/mg, '$1') // replace escape chars
+      }\n\`\`\``)
     .join('\n');
 
   if (examples) {

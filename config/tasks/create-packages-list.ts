@@ -1,4 +1,3 @@
-import { getPackages } from '@lerna/project';
 import { writeFile } from 'fs-extra';
 import { getRootPath, relativeToRoot, toRepoURL } from '../utils/paths';
 import { getPkgs, isPrivatePkg } from '../utils/pkg';
